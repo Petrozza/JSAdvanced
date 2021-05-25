@@ -3,7 +3,7 @@ function timeToWalk(steps, footPrint, speed) {
     let time = Math.round(dist / speed * 3.6);
     time += Math.floor(dist / 500) * 60;
 
-    const seconds = time % 60;
+    const seconds = time %60;
     time -= seconds;
     time /= 60;
     const minutes = time % 60;
