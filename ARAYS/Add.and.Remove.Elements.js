@@ -11,7 +11,7 @@ function solve(input){
         }
         count++;
     });
-    if (output.length == 0) ? console.log('Empty') : console.log(output.join('\n'));; 
+    output.length == 0 ? console.log('Empty') : console.log(output.join('\n'));; 
     
 }
 
