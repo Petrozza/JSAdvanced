@@ -41,7 +41,7 @@
 
             //Convert NodeList or HTML Collection to JS array
             let goodSuperHeroes = Array.from(goodsuperheroelements); // for Judge
-            let goodSuperHeroes2 = [...goodsuperheroelements] //net for Judge
+            let goodSuperHeroes2 = [...goodsuperheroelements] //not for Judge
             console.log(goodSuperHeroes);
 
             //Get parrent element and change background
