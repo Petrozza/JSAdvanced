@@ -1,7 +1,9 @@
 function addItem() {
     let newItemTextElement = document.getElementById('newItemText');
-    let itemsElement = document.getElementById('items');
-    let c = document.createElement('li');
+    let liItemElement = document.createElement('li');
     liItemElement.textContent = newItemTextElement.value;
+    let itemsElement = document.getElementById('items');
     itemsElement.appendChild(liItemElement);
+
+    newItemTextElement.value = '';
 }
