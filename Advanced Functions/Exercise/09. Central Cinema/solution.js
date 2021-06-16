@@ -26,9 +26,9 @@ function solve() {
 
         if (name.trim() !== '' &&
             hall.trim() !== '' &&
-            price.trim !== '' &&
-            !isNaN(Number(price))
-        ) {
+            price.trim() !== '' &&
+            !isNaN(Number(price))) {
+
             price = Number(price).toFixed(2);
             let li = document.createElement('li');
 
@@ -47,7 +47,7 @@ function solve() {
 
             let archiveButton = document.createElement('button');
             archiveButton.textContent = 'Archive';
-            //archiveButton = addEventListener('click', archiveMovie);
+            archiveButton = addEventListener('click', archiveMovie);
 
             rightSectionDiv.appendChild(priceStrong);
             rightSectionDiv.appendChild(ticketsSoldInput);
@@ -67,7 +67,7 @@ function solve() {
         let ticketsSoldInput = movieLi.querySelector('div input');
         let ticketsSold = ticketsSoldInput.value;
 
-        if (ticketsSold.trim !== '' &&
+        if (ticketsSold.trim() !== '' &&
             isNaN(Number(ticketsSold))) {
 
             ticketsSold = Number(ticketsSold);
@@ -81,14 +81,27 @@ function solve() {
             let rightDiv = movieLi.querySelector('div');
             rightDiv.remove();
 
+            let deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.addEventListener('click', deleteFromArchive);
+            movieLi.appendChild(deleteButton);
+
+
             let archiveUl = document.querySelector('#archive ul');
             archiveUl.appendChild(movieLi);
         }
     }
 
+    function deleteFromArchive(e) {
+        let currentElement = e.target;
+        let movieLi = currentElement.parentElement;
 
+        movieLi.remove();
+    }
 
+    function clearArchive(params) {
 
+    }
 
     //implement archive movie functionality
 
