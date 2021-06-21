@@ -1,0 +1,10 @@
+- предварително си правим папка за проектите
+- в terminal пускам "npm init -y", "npm install mocha", "npm install chai"
+- отива се в дебъгера и се избира "create launch.json file" и се отваря чрез Node.js
+- реда "program: "${worksapceFolder}..." чрез маркиране между скобите и избиране на бутон вдясно AddConfiguration mocha.tests става "${warkspaceFolder}/node_modules/mocha/bin/_mocha"
+- реда "tdd" става "bdd"
+- реда "${warkspaceFolder}/test" става "${file}"
+
+във всеки файл в началото се вмъква
+const { describe, it } = require('mocha');
+const { assert } = require('chai');
