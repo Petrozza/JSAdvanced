@@ -8,3 +8,15 @@
 във всеки файл в началото се вмъква
 const { describe, it } = require('mocha');
 const { assert } = require('chai');
+
+na ivo
+
+init, install ...
+create launch prez debug
+iztriva se cialata configuracia v array i add configuration = mocha tests
+mahat se gornite tdd i -u
+iztriva se TEST ot "${workspacefolder}/test"
+
+vmakva se :
+const {expect, assert} = require('chai');
+
