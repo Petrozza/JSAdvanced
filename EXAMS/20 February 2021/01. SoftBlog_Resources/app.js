@@ -76,6 +76,7 @@ function solve() {
          archiveTitlesList.sort((a, b) => a.textContent.localeCompare(b.textContent));
          for (let title of archiveTitlesList) {
             olElement.appendChild(title);
+            articleElement.remove();
          }
       });
 
